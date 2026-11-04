@@ -17,3 +17,6 @@ The home page lists my credentials, a skills × projects matrix, and the project
 ## Adding a project
 1. Build the project in its own repo, with a case-study `index.html` at the root using `assets/site.css`, and turn on GitHub Pages for it.
 2. Add a column to the skills matrix and a project card in `index.html`.
+
+## License
+Site code: MIT (see `LICENSE`). Project data keeps its own license, stated in each project repo.

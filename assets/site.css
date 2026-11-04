@@ -108,7 +108,7 @@ a.dot:hover { background: var(--accent-soft); }
 /* project cards */
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
 .project-card { overflow: hidden; display: flex; flex-direction: column; }
-.project-card .thumb { aspect-ratio: 16 / 9; object-fit: cover; object-position: top left; border-bottom: 1px solid var(--line); background: #EFECF8; width: 100%; }
+.project-card .thumb { width: 100%; border-bottom: 1px solid var(--line); background: var(--surface); }
 .project-card .body { padding: 24px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1; }
 .project-card h3 { font-size: 22px; font-weight: 800; }
 .project-card p { color: var(--muted); }
