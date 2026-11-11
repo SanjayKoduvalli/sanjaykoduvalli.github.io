@@ -17,8 +17,8 @@
   <nav class="wrap" aria-label="Main">
     <a class="brand" href="./">Sanjay Koduvalli</a>
     <div class="nav-links">
-      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
     </div>
   </nav>
 </header>
@@ -60,11 +60,43 @@
     </aside>
   </section>
 
+  <section class="wrap section" id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title">Projects</h2>
+    <div class="cards">
+      <article class="card project-card">
+        <img class="thumb" src="assets/olist-dashboard.png" alt="The Olist dashboard's seller funnel: 5,998 leads, 740 sign-ups and 2,354 active sellers" width="1384" height="592" loading="lazy">
+        <div class="body">
+          <h3>Olist: from seller lead to customer revenue</h3>
+          <p>A Brazilian marketplace's seller funnel joined to its customer orders. Only 12.3% of leads sign up, and 51% of sign-ups never make a sale.</p>
+          <p class="meta">January 2018 – August 2018 · Kaggle data · DuckDB, Python, ECharts</p>
+          <div class="card-skills">
+            <p class="label">Skills it proves</p>
+            <div class="chips">
+              <span class="chip">SQL data modeling</span>
+              <span class="chip">Data cleaning &amp; validation</span>
+              <span class="chip">Funnel &amp; cohort analysis</span>
+              <span class="chip">Dashboard design</span>
+              <span class="chip quiet">Python automation</span>
+            </div>
+            <a class="skills-link" href="#matrix-olist">See them in the skills matrix ↓</a>
+          </div>
+          <div class="btns">
+            <a class="btn primary small" href="https://sanjaykoduvalli.github.io/olist_marketing_and_sales_dashboard/">Read the case study</a>
+            <a class="btn small" href="https://sanjaykoduvalli.github.io/olist_marketing_and_sales_dashboard/dashboard/">Open dashboard</a>
+          </div>
+        </div>
+      </article>
+      <article class="placeholder-card">
+        <h3>Coming next: statistics</h3>
+        <p>A/B testing, regression and statistical analysis. In progress.</p>
+      </article>
+    </div>
+  </section>
+
   <section class="wrap section" id="skills" aria-labelledby="skills-title">
     <div class="section-head">
       <div>
         <h2 id="skills-title">Skills × projects</h2>
-        <p>Pick a skill, follow the row to the project that proves it. Every dot links to the part of the case study where that skill is shown.</p>
       </div>
       <div class="legend" aria-label="Legend">
         <span><span class="key show" aria-hidden="true"></span>Showcase skill</span>
@@ -77,8 +109,8 @@
         <thead>
           <tr>
             <th scope="col">Skill</th>
-            <th scope="col"><a href="https://sanjaykoduvalli.github.io/olist_marketing_and_sales_dashboard/">Olist: lead to revenue</a><span class="sub">SQL · e-commerce</span></th>
-            <th scope="col">Project 2<span class="sub">Statistics · in progress</span></th>
+            <th scope="col" id="matrix-olist"><a href="https://sanjaykoduvalli.github.io/olist_marketing_and_sales_dashboard/">Olist: lead to revenue</a><span class="sub">SQL · e-commerce</span></th>
+            <th scope="col">Coming next<span class="sub">Statistics · in progress</span></th>
           </tr>
         </thead>
         <tbody>
@@ -110,48 +142,20 @@
           <tr>
             <th scope="row">A/B testing<span class="sub">Hypothesis tests, significance, sample size and power</span></th>
             <td>—</td>
-            <td><span class="dot planned" role="img" aria-label="Project 2: A/B testing (planned)"></span></td>
+            <td><span class="dot planned" role="img" aria-label="Upcoming statistics project: A/B testing (planned)"></span></td>
           </tr>
           <tr>
             <th scope="row">Regression modeling<span class="sub">Linear regression design, diagnostics, reading coefficients</span></th>
             <td>—</td>
-            <td><span class="dot planned" role="img" aria-label="Project 2: regression modeling (planned)"></span></td>
+            <td><span class="dot planned" role="img" aria-label="Upcoming statistics project: regression modeling (planned)"></span></td>
           </tr>
           <tr>
             <th scope="row">Statistical analysis<span class="sub">Distributions, confidence intervals, correlation</span></th>
             <td>—</td>
-            <td><span class="dot planned" role="img" aria-label="Project 2: statistical analysis (planned)"></span></td>
+            <td><span class="dot planned" role="img" aria-label="Upcoming statistics project: statistical analysis (planned)"></span></td>
           </tr>
         </tbody>
       </table>
-    </div>
-  </section>
-
-  <section class="wrap section" id="projects" aria-labelledby="projects-title">
-    <h2 id="projects-title">Projects</h2>
-    <div class="cards">
-      <article class="card project-card">
-        <img class="thumb" src="assets/olist-dashboard.png" alt="The Olist dashboard's seller funnel: 5,998 leads, 740 sign-ups and 2,354 active sellers" width="1384" height="592" loading="lazy">
-        <div class="body">
-          <div class="chips">
-            <span class="chip">SQL</span>
-            <span class="chip">Validation</span>
-            <span class="chip">Funnel</span>
-            <span class="chip">Dashboard</span>
-          </div>
-          <h3>Olist: from seller lead to customer revenue</h3>
-          <p>A Brazilian marketplace's seller funnel joined to its customer orders. Only 12.3% of leads sign up, and 51% of sign-ups never make a sale.</p>
-          <p class="meta">January 2018 – August 2018 · Kaggle data · DuckDB, Python, ECharts</p>
-          <div class="btns">
-            <a class="btn primary small" href="https://sanjaykoduvalli.github.io/olist_marketing_and_sales_dashboard/">Read the case study</a>
-            <a class="btn small" href="https://sanjaykoduvalli.github.io/olist_marketing_and_sales_dashboard/dashboard/">Open dashboard</a>
-          </div>
-        </div>
-      </article>
-      <article class="placeholder-card">
-        <h3>Project 2: statistics</h3>
-        <p>A/B testing, regression and statistical analysis. In progress.</p>
-      </article>
     </div>
   </section>
 </main>

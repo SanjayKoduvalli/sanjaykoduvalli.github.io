@@ -103,6 +103,10 @@ section[id], .cs-main section { scroll-margin-top: 80px; }
 .dot.used::before { border: 2px solid var(--accent); }
 .dot.planned::before { border: 2px dashed var(--faint); }
 a.dot:hover { background: var(--accent-soft); }
+/* Home page: a project card's "See them in the skills matrix" link targets that project's column header;
+   the targeted column is tinted so the reader lands on it. */
+.matrix th[id] { scroll-margin-top: 200px; }
+.matrix:has(#matrix-olist:target) tr > :nth-child(2) { background: var(--accent-soft); }
 .key { width: 14px; height: 14px; border-radius: 50%; box-sizing: border-box; display: inline-block; }
 .key.show { background: var(--accent); }
 .key.used { border: 2px solid var(--accent); }
@@ -116,6 +120,9 @@ a.dot:hover { background: var(--accent-soft); }
 .project-card h3 { font-size: 22px; font-weight: 800; }
 .project-card p { color: var(--muted); }
 .project-card .meta { font-size: 13px; color: var(--subtle); }
+.card-skills { display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line-2); padding-top: 14px; }
+.skills-link { font-size: 14px; font-weight: 700; text-decoration: none; }
+.skills-link:hover { text-decoration: underline; }
 .project-card .btns { margin-top: auto; padding-top: 6px; gap: 10px; }
 .placeholder-card { background: var(--surface-2); border: 2px dashed #D9D5E6; border-radius: var(--radius); display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; padding: 40px; min-height: 340px; text-align: center; }
 .placeholder-card h3 { font-size: 20px; color: var(--subtle); }
@@ -144,6 +151,18 @@ a.dot:hover { background: var(--accent-soft); }
 .decisions { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
 .decision { padding: 18px; font-size: 15px; line-height: 1.6; box-shadow: none; border-radius: 14px; }
 .decision strong { display: block; margin-bottom: 4px; color: var(--ink); }
+/* Case study: the key-result tiles sit inside section 2, above the findings */
+.cs-main .stats { padding-top: 0; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+.cs-main .stat b { font-size: 28px; }
+/* Findings paired with the action each one supports (case-study section 2) */
+.fa-list { display: flex; flex-direction: column; gap: 14px; }
+.fa { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0; padding: 0; box-shadow: none; border-radius: 14px; overflow: hidden; font-size: 15px; line-height: 1.6; }
+.fa > div { padding: 18px; }
+.fa strong { display: block; margin-bottom: 4px; color: var(--ink); }
+.fa .label { font-size: 12px; margin-bottom: 6px; }
+.fa .fa-act { background: var(--accent-soft); }
+.fa .fa-act .label { color: var(--accent-ink); }
+.toc .toc-sub { margin-top: 14px; }
 .code { background: var(--ink); color: #E9E6F5; border-radius: 14px; padding: 18px 20px; font-family: var(--mono); font-size: 14px; line-height: 1.6; overflow-x: auto; white-space: pre; }
 .source { font-size: 14px; color: var(--subtle); border-top: 1px solid var(--line); padding-top: 18px; }
 @media (max-width: 720px) { .toc { position: static; max-width: none; } }
