@@ -2,17 +2,16 @@
 
 The single to-do list for the whole portfolio: the home site and every project. Each project's `AI_CONTEXT.md` keeps that project's detailed status; this file keeps the open items in one place. Claude updates it at the end of every work session (tick items, add new ones, keep the date current).
 
-Last updated: 2026-11-11 (01:10)
+Last updated: 2026-11-11 (10:45)
 
 **Status key:** ⬜ not started · 🔄 in progress · ⏸ waiting on Sanjay · ✅ done (moved to "Done" at the bottom)
 
 ## Housekeeping (do first)
-- ⏸ **Push the feedback changes (2026-11-11).** Home site: `index.html`, `assets/site.css`, `TODO.md`. Olist: `index.html`, `assets/site.css`, `dashboard/index.html`, `AI_CONTEXT.md`, `NOTES.md`, `docs/decision_register.md`.
-- ⏸ **Push the latest changes** in all three repos (Upworthy analysis + case study; home-site Upworthy card; shared site.css in each repo). Then turn on GitHub Pages for `upworthy_headlines`.
-- ⏸ **Confirm GitHub Pages is on** for `sanjaykoduvalli.github.io` and `olist_marketing_and_sales_dashboard` (Settings › Pages › deploy from `main`, root).
+- ⏸ **Push the audit fixes (2026-11-11, 10:45).** Home site: `index.html`, `TODO.md`. Olist: `index.html`, `dashboard/index.html`, `docs/decision_register.md`. Upworthy: `index.html`, `assets/case-study.css`, `pipeline/05_report/case_study_template.html`, `docs/decision_register.md`.
 - ⬜ Olist `AI_CONTEXT.md`: a few places still describe the pre-rename repo; tidy when next in that project.
 
 ## Home site (`sanjaykoduvalli.github.io`)
+- ⬜ Optional, for marketing-measurement roles: an attribution project (last-touch vs. multi-touch, with tradeoffs; e.g. Criteo data, built in dbt) and a short "Metric definitions" section on Olist.
 - ⬜ Olist card outcome line (Colin): Sanjay chose to change only the case study for now (2026-11-11); revisit if the card should echo the findings → actions.
 - ✅ Upworthy card, thumbnail and skills-matrix column added (2026-11-11). Skills list revised: added Data visualization and Text classification rows; rewrote the A/B testing, regression and statistical analysis descriptions to match what was actually shown (no power analysis, logistic not linear regression, no correlation analysis).
 - ⬜ **Blog section** (backlog, not started; Sanjay asked to log it, not start it). First post: using AI to build HTML dashboards as an alternative to Tableau. Cover the HTML approach's limitations (including slowing down as data grows), ease of building in Tableau vs. AI + HTML, and how publishing HTML dashboards compares with large-scale platforms (Power BI, Cognos) on very large datasets.
@@ -39,6 +38,8 @@ Last updated: 2026-11-11 (01:10)
 - 🔍 Case study draft built (R23): `index.html` + `notebooks/walkthrough.ipynb`. **Sanjay:** review the page (open `~/projects/upworthy_headlines/index.html`), then push and turn on GitHub Pages for the repo.
 
 ## Done
+- ✅ Hero (2026-11-11): Sanjay kept the headline and added the line "Eight years building funnels, models and dashboards that leaders use, at IBM and Macy’s."
+- ✅ Readiness audit fixes (2026-11-11): "Personal Projects" nav on every page; case-study skill chips match the home cards; link-preview (og:) tags on all pages; Upworthy install asides removed and method detail in 3.3–3.6 folded (Upworthy R29, Olist R36). Earlier pushes and GitHub Pages confirmed live by Sanjay.
 - ✅ Reviewer feedback (Colin, Sheetal), 2026-11-11. Home: Projects moved above the skills matrix; Olist card lists the matrix skill names and links to its tinted matrix column; placeholder renamed "Coming next". Olist case study: findings paired with four recommended actions near the top (step 14), "Key decisions" → "Analysis decisions", limitations after validation and decisions; R$ what-if declined (Olist R34).
 - ✅ Résumé PDF on the home site (2026-11-05).
 - ✅ Olist repo restructured, MIT license, case-study page (2026-11-04/05).
