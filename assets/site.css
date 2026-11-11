@@ -42,7 +42,10 @@ p { margin: 0; }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 
 /* header + footer */
-.site-header { background: var(--surface); border-bottom: 1px solid var(--line); }
+/* The same bar sits on every page (home, case studies, dashboards), pinned to the top. Dashboards carry
+   a scoped copy of these rules (.sitebar) because they load the dashboard theme, not this file. */
+.site-header { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 30; }
+section[id], .cs-main section { scroll-margin-top: 80px; }
 .site-header nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 14px; padding-bottom: 14px; }
 .brand { font-weight: 800; font-size: 18px; color: var(--ink); text-decoration: none; }
 .nav-links { display: flex; flex-wrap: wrap; gap: 4px; }
@@ -127,12 +130,12 @@ a.dot:hover { background: var(--accent-soft); }
 .stat b { font-size: 32px; font-weight: 800; color: var(--accent); line-height: 1.2; }
 .stat span { color: var(--muted); font-size: 14px; }
 .cs-body { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; padding-top: 32px; padding-bottom: 56px; }
-.toc { flex: 1 1 220px; max-width: 260px; display: flex; flex-direction: column; gap: 2px; font-size: 14px; position: sticky; top: 16px; }
+.toc { flex: 1 1 220px; max-width: 260px; display: flex; flex-direction: column; gap: 2px; font-size: 14px; position: sticky; top: 88px; }
 .toc a { padding: 9px 12px; border-radius: 8px; text-decoration: none; color: #3D3852; }
 .toc a:hover { background: var(--accent-soft); color: var(--accent-ink); }
 .toc .label { margin-bottom: 8px; }
 .cs-main { flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 44px; font-size: 17px; line-height: 1.7; }
-.cs-main section { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 16px; }
+.cs-main section { display: flex; flex-direction: column; gap: 14px; }
 .cs-main h2 { font-size: 26px; font-weight: 800; }
 .cs-main ol, .cs-main ul { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; }
 .cs-main figure { margin: 0; display: flex; flex-direction: column; gap: 8px; }
