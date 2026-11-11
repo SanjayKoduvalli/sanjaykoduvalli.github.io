@@ -7,12 +7,13 @@ The home page lists my credentials, a skills × projects matrix, and the project
 | Project | Repository |
 |---|---|
 | Olist: from seller lead to customer revenue | [olist_marketing_and_sales_dashboard](https://github.com/SanjayKoduvalli/olist_marketing_and_sales_dashboard) |
+| Upworthy: does a woman in the headline change clicks? | [upworthy_headlines](https://github.com/SanjayKoduvalli/upworthy_headlines) |
 
 ## Files
 - `index.html`: the home page (plain HTML, no build step).
 - `assets/site.css`: site styles, shared with every project's case-study page (each project repo keeps its own copy).
 - `assets/Sanjay_Koduvalli_Resume.pdf`: the résumé behind the download button.
-- `assets/olist-dashboard.png`: project thumbnail.
+- `assets/olist-dashboard.png`, `assets/upworthy-headlines.png`: project thumbnails.
 
 ## Adding a project
 1. Build the project in its own repo, with a case-study `index.html` at the root using `assets/site.css`, and turn on GitHub Pages for it.

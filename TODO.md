@@ -2,20 +2,20 @@
 
 The single to-do list for the whole portfolio: the home site and every project. Each project's `AI_CONTEXT.md` keeps that project's detailed status; this file keeps the open items in one place. Claude updates it at the end of every work session (tick items, add new ones, keep the date current).
 
-Last updated: 2026-11-11
+Last updated: 2026-11-11 (01:10)
 
 **Status key:** ⬜ not started · 🔄 in progress · ⏸ waiting on Sanjay · ✅ done (moved to "Done" at the bottom)
 
 ## Housekeeping (do first)
 - ⏸ **Push the feedback changes (2026-11-11).** Home site: `index.html`, `assets/site.css`, `TODO.md`. Olist: `index.html`, `assets/site.css`, `dashboard/index.html`, `AI_CONTEXT.md`, `NOTES.md`, `docs/decision_register.md`.
-- ⏸ **Upworthy: first push.** The GitHub repo exists (github.com/SanjayKoduvalli/upworthy_headlines) but the folder isn't a git repository yet: `git init`, add the remote, commit, push. `data/raw/` and `build/` are already excluded by `.gitignore`.
+- ⏸ **Push the latest changes** in all three repos (Upworthy analysis + case study; home-site Upworthy card; shared site.css in each repo). Then turn on GitHub Pages for `upworthy_headlines`.
 - ⏸ **Confirm GitHub Pages is on** for `sanjaykoduvalli.github.io` and `olist_marketing_and_sales_dashboard` (Settings › Pages › deploy from `main`, root).
 - ⬜ Olist `AI_CONTEXT.md`: a few places still describe the pre-rename repo; tidy when next in that project.
 
 ## Home site (`sanjaykoduvalli.github.io`)
 - ⏸ **Colin's tooltip note** on "See the projects" was cut off; ask him what he meant. Projects now sit right under the hero, which may already cover it.
 - ⬜ Olist card outcome line (Colin): Sanjay chose to change only the case study for now (2026-11-11); revisit if the card should echo the findings → actions.
-- ⬜ **Add Upworthy when it's done:** project card with thumbnail; fill its column in the skills matrix (Python automation, A/B testing, regression modeling, statistical analysis, plus data cleaning); add it to the README's project table.
+- ✅ Upworthy card, thumbnail and skills-matrix column added (2026-11-11). Skills list revised: added Data visualization and Text classification rows; rewrote the A/B testing, regression and statistical analysis descriptions to match what was actually shown (no power analysis, logistic not linear regression, no correlation analysis).
 - ⬜ **Blog section** (backlog, not started; Sanjay asked to log it, not start it). First post: using AI to build HTML dashboards as an alternative to Tableau. Cover the HTML approach's limitations (including slowing down as data grows), ease of building in Tableau vs. AI + HTML, and how publishing HTML dashboards compares with large-scale platforms (Power BI, Cognos) on very large datasets.
 
 ## Project 1: Olist (`olist_marketing_and_sales_dashboard`)

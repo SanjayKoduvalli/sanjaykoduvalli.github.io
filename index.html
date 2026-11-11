@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sanjay Koduvalli · Analytics Portfolio</title>
-<meta name="description" content="Analytics portfolio of Sanjay Koduvalli: case studies with the full analysis and the dashboards they produced.">
+<meta name="description" content="Analytics portfolio of Sanjay Koduvalli: case studies with the full analysis, the code and what it produced.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
@@ -77,6 +77,7 @@
               <span class="chip">Funnel &amp; cohort analysis</span>
               <span class="chip">Dashboard design</span>
               <span class="chip quiet">Python automation</span>
+              <span class="chip quiet">Data visualization</span>
             </div>
             <a class="skills-link" href="#matrix-olist">See them in the skills matrix ↓</a>
           </div>
@@ -86,9 +87,30 @@
           </div>
         </div>
       </article>
-      <article class="placeholder-card">
-        <h3>Coming next: statistics</h3>
-        <p>A/B testing, regression and statistical analysis. In progress.</p>
+      <article class="card project-card">
+        <img class="thumb" src="assets/upworthy-headlines.png" alt="Chart: headlines centering a woman (+8.9%) or a man (+7.4%) get more clicks than headlines with no gendered person; woman vs. man is not significantly different" width="1384" height="592" loading="lazy">
+        <div class="body">
+          <h3>Upworthy: does a woman in the headline change clicks?</h3>
+          <p>Thousands of randomized headline tests from a US news site, re-analyzed in Python. Centering a woman did as well as centering a man; framing the same story around the environment cost 16% of clicks.</p>
+          <p class="meta">2013 – 2015 · Upworthy Research Archive · Python, NumPy, SciPy, matplotlib</p>
+          <div class="card-skills">
+            <p class="label">Skills it proves</p>
+            <div class="chips">
+              <span class="chip">A/B testing</span>
+              <span class="chip">Regression modeling</span>
+              <span class="chip">Statistical analysis</span>
+              <span class="chip">Python automation</span>
+              <span class="chip">Data cleaning &amp; validation</span>
+              <span class="chip">Text classification</span>
+              <span class="chip">Data visualization</span>
+            </div>
+            <a class="skills-link" href="#matrix-upworthy">See them in the skills matrix ↓</a>
+          </div>
+          <div class="btns">
+            <a class="btn primary small" href="https://sanjaykoduvalli.github.io/upworthy_headlines/">Read the case study</a>
+            <a class="btn small" href="https://github.com/SanjayKoduvalli/upworthy_headlines/blob/main/notebooks/walkthrough.ipynb">Open the notebook</a>
+          </div>
+        </div>
       </article>
     </div>
   </section>
@@ -101,8 +123,7 @@
       <div class="legend" aria-label="Legend">
         <span><span class="key show" aria-hidden="true"></span>Showcase skill</span>
         <span><span class="key used" aria-hidden="true"></span>Also used</span>
-        <span><span class="key planned" aria-hidden="true"></span>Planned</span>
-      </div>
+              </div>
     </div>
     <div class="card matrix-box">
       <table class="matrix">
@@ -110,7 +131,7 @@
           <tr>
             <th scope="col">Skill</th>
             <th scope="col" id="matrix-olist"><a href="https://sanjaykoduvalli.github.io/olist_marketing_and_sales_dashboard/">Olist: lead to revenue</a><span class="sub">SQL · e-commerce</span></th>
-            <th scope="col">Coming next<span class="sub">Statistics · in progress</span></th>
+            <th scope="col" id="matrix-upworthy"><a href="https://sanjaykoduvalli.github.io/upworthy_headlines/">Upworthy: women in headlines</a><span class="sub">Python · statistics</span></th>
           </tr>
         </thead>
         <tbody>
@@ -120,9 +141,9 @@
             <td>—</td>
           </tr>
           <tr>
-            <th scope="row">Data cleaning &amp; validation<span class="sub">Rule-labeled cleaning, zero-row tests, mutation testing</span></th>
+            <th scope="row">Data cleaning &amp; validation<span class="sub">Flag-don't-delete rules, zero-row tests, mutation testing, independent re-derivation</span></th>
             <td><a class="dot show" href="https://sanjaykoduvalli.github.io/olist_marketing_and_sales_dashboard/#clean" aria-label="Olist: data cleaning and validation (showcase)"></a></td>
-            <td>—</td>
+            <td><a class="dot show" href="https://sanjaykoduvalli.github.io/upworthy_headlines/#clean" aria-label="Upworthy: data cleaning and validation (showcase)"></a></td>
           </tr>
           <tr>
             <th scope="row">Funnel &amp; cohort analysis<span class="sub">Conversion, activation, 90-day retention, censoring</span></th>
@@ -135,24 +156,34 @@
             <td>—</td>
           </tr>
           <tr>
-            <th scope="row">Python automation<span class="sub">One-command build, export, independent checks</span></th>
+            <th scope="row">Data visualization<span class="sub">Charts that carry the finding: intervals, replication, accessible color</span></th>
+            <td><a class="dot used" href="https://sanjaykoduvalli.github.io/olist_marketing_and_sales_dashboard/#dash" aria-label="Olist: data visualization (also used)"></a></td>
+            <td><a class="dot show" href="https://sanjaykoduvalli.github.io/upworthy_headlines/#gender" aria-label="Upworthy: data visualization (showcase)"></a></td>
+          </tr>
+          <tr>
+            <th scope="row">Python automation<span class="sub">One-command builds, generated reports, executed notebooks</span></th>
             <td><a class="dot used" href="https://sanjaykoduvalli.github.io/olist_marketing_and_sales_dashboard/#valid" aria-label="Olist: Python automation (also used)"></a></td>
-            <td>—</td>
+            <td><a class="dot show" href="https://sanjaykoduvalli.github.io/upworthy_headlines/#how" aria-label="Upworthy: Python automation (showcase)"></a></td>
           </tr>
           <tr>
-            <th scope="row">A/B testing<span class="sub">Hypothesis tests, significance, sample size and power</span></th>
+            <th scope="row">A/B testing<span class="sub">A/A checks, randomization checks, calibrated significance</span></th>
             <td>—</td>
-            <td><span class="dot planned" role="img" aria-label="Upcoming statistics project: A/B testing (planned)"></span></td>
+            <td><a class="dot show" href="https://sanjaykoduvalli.github.io/upworthy_headlines/#aa" aria-label="Upworthy: A/B testing (showcase)"></a></td>
           </tr>
           <tr>
-            <th scope="row">Regression modeling<span class="sub">Linear regression design, diagnostics, reading coefficients</span></th>
+            <th scope="row">Regression modeling<span class="sub">Logistic regression, fixed effects, interactions, overdispersion</span></th>
             <td>—</td>
-            <td><span class="dot planned" role="img" aria-label="Upcoming statistics project: regression modeling (planned)"></span></td>
+            <td><a class="dot show" href="https://sanjaykoduvalli.github.io/upworthy_headlines/#model" aria-label="Upworthy: regression modeling (showcase)"></a></td>
           </tr>
           <tr>
-            <th scope="row">Statistical analysis<span class="sub">Distributions, confidence intervals, correlation</span></th>
+            <th scope="row">Statistical analysis<span class="sub">Confidence intervals, multiple-comparison correction, held-out replication</span></th>
             <td>—</td>
-            <td><span class="dot planned" role="img" aria-label="Upcoming statistics project: statistical analysis (planned)"></span></td>
+            <td><a class="dot show" href="https://sanjaykoduvalli.github.io/upworthy_headlines/#find" aria-label="Upworthy: statistical analysis (showcase)"></a></td>
+          </tr>
+          <tr>
+            <th scope="row">Text classification<span class="sub">AI-assisted labeling validated against blind hand labels (Cohen's kappa)</span></th>
+            <td>—</td>
+            <td><a class="dot show" href="https://sanjaykoduvalli.github.io/upworthy_headlines/#labels" aria-label="Upworthy: text classification (showcase)"></a></td>
           </tr>
         </tbody>
       </table>

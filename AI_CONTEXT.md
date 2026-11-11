@@ -10,9 +10,9 @@ AI-assisted analyses of public datasets by Sanjay Koduvalli (marketing analytics
 ## 2. Map
 | Part | Local folder (Sanjay's Mac) | GitHub | Status |
 |---|---|---|---|
-| Home site | `~/projects/sanjaykoduvalli.github.io` | github.com/SanjayKoduvalli/sanjaykoduvalli.github.io | Live; Upworthy card and blog to come |
+| Home site | `~/projects/sanjaykoduvalli.github.io` | github.com/SanjayKoduvalli/sanjaykoduvalli.github.io | Live; two project cards; skills matrix has 10 rows (2026-11-11); blog to come |
 | Project 1: Olist (SQL, funnel and cohort, dashboard design) | `~/projects/olist_marketing_and_sales_dashboard` | github.com/SanjayKoduvalli/olist_marketing_and_sales_dashboard | Dashboard built; write-up, deck and QA left |
-| Project 2: Upworthy (Python, cleaning, A/B testing, regression) | `~/projects/upworthy_headlines` (raw data: `~/Downloads/jd64p-osfstorage-archive`) | github.com/SanjayKoduvalli/upworthy_headlines | Classifying headlines; analysis next |
+| Project 2: Upworthy (Python, cleaning, A/B testing, regression) | `~/projects/upworthy_headlines` (raw data: `~/Downloads/jd64p-osfstorage-archive`) | github.com/SanjayKoduvalli/upworthy_headlines | Analysis done (confirmatory); case study + notebook built; on the home page |
 
 **Open work across everything: `TODO.md` in this repo.** Update it at the end of every session.
 
@@ -28,3 +28,6 @@ The full rule set is in each project's `AI_CONTEXT.md` (it began in Olist's, §2
 ## 5. Home-site files
 - `index.html`: the home page (plain HTML, no build step). `assets/site.css`: shared styles, copied into each project repo (keep the copies in sync). `assets/Sanjay_Koduvalli_Resume.pdf`, `assets/olist-dashboard.png`.
 - Adding a project: build it in its own repo with a case-study `index.html` at the root using `assets/site.css`, turn on Pages, then add a card and a matrix column here. Give the column header an id (like `matrix-olist`), point the card's "See them in the skills matrix" link at it, and add its `:has(#id:target)` highlight rule in `site.css`. Case studies lead with findings paired with recommended actions (Olist R34). No "Project 1/2" labels (Sanjay, 2026-11-11).
+
+## 6. Skills matrix rules (2026-11-11)
+A skill gets a filled dot only where the project's case study visibly demonstrates it (link the dot to that section); an outline dot where it was used but isn't the point. Each row's description must match what the linked work actually shows; review the list whenever a project is added.
