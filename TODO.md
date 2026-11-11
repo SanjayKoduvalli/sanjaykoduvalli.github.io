@@ -2,7 +2,7 @@
 
 The single to-do list for the whole portfolio: the home site and every project. Each project's `AI_CONTEXT.md` keeps that project's detailed status; this file keeps the open items in one place. Claude updates it at the end of every work session (tick items, add new ones, keep the date current).
 
-Last updated: 2026-11-11 (10:45)
+Last updated: 2026-11-11 (21:50)
 
 **Status key:** ⬜ not started · 🔄 in progress · ⏸ waiting on Sanjay · ✅ done (moved to "Done" at the bottom)
 
@@ -38,6 +38,7 @@ Last updated: 2026-11-11 (10:45)
 - 🔍 Case study draft built (R23): `index.html` + `notebooks/walkthrough.ipynb`. **Sanjay:** review the page (open `~/projects/upworthy_headlines/index.html`), then push and turn on GitHub Pages for the repo.
 
 ## Done
+- ✅ Card blurbs rewritten by Sanjay (2026-11-11): both home-page project cards now describe the question each project asks instead of headline numbers. Page meta/og descriptions did not contain the old blurbs, so they are unchanged.
 - ✅ Hero (2026-11-11): Sanjay kept the headline and added the line "Eight years building funnels, models and dashboards that leaders use, at IBM and Macy’s."
 - ✅ Readiness audit fixes (2026-11-11): "Personal Projects" nav on every page; case-study skill chips match the home cards; link-preview (og:) tags on all pages; Upworthy install asides removed and method detail in 3.3–3.6 folded (Upworthy R29, Olist R36). Earlier pushes and GitHub Pages confirmed live by Sanjay.
 - ✅ Reviewer feedback (Colin, Sheetal), 2026-11-11. Home: Projects moved above the skills matrix; Olist card lists the matrix skill names and links to its tinted matrix column; placeholder renamed "Coming next". Olist case study: findings paired with four recommended actions near the top (step 14), "Key decisions" → "Analysis decisions", limitations after validation and decisions; R$ what-if declined (Olist R34).

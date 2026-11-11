@@ -10,7 +10,7 @@ AI-assisted analyses of public datasets by Sanjay Koduvalli (marketing analytics
 ## 2. Map
 | Part | Local folder (Sanjay's Mac) | GitHub | Status |
 |---|---|---|---|
-| Home site | `~/projects/sanjaykoduvalli.github.io` | github.com/SanjayKoduvalli/sanjaykoduvalli.github.io | Live; two project cards; skills matrix has 10 rows (2026-11-11); blog to come |
+| Home site | `~/projects/sanjaykoduvalli.github.io` | github.com/SanjayKoduvalli/sanjaykoduvalli.github.io | Live; two project cards (blurbs in Sanjay's words, 2026-11-11); skills matrix has 10 rows (2026-11-11); blog to come |
 | Project 1: Olist (SQL, funnel and cohort, dashboard design) | `~/projects/olist_marketing_and_sales_dashboard` | github.com/SanjayKoduvalli/olist_marketing_and_sales_dashboard | Dashboard built; write-up, deck and QA left |
 | Project 2: Upworthy (Python, cleaning, A/B testing, regression) | `~/projects/upworthy_headlines` (raw data: `~/Downloads/jd64p-osfstorage-archive`) | github.com/SanjayKoduvalli/upworthy_headlines | Analysis done (confirmatory); case study + notebook built; on the home page |
 
