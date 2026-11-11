@@ -13,7 +13,6 @@ Last updated: 2026-11-11 (01:10)
 - ⬜ Olist `AI_CONTEXT.md`: a few places still describe the pre-rename repo; tidy when next in that project.
 
 ## Home site (`sanjaykoduvalli.github.io`)
-- ⏸ **Colin's tooltip note** on "See the projects" was cut off; ask him what he meant. Projects now sit right under the hero, which may already cover it.
 - ⬜ Olist card outcome line (Colin): Sanjay chose to change only the case study for now (2026-11-11); revisit if the card should echo the findings → actions.
 - ✅ Upworthy card, thumbnail and skills-matrix column added (2026-11-11). Skills list revised: added Data visualization and Text classification rows; rewrote the A/B testing, regression and statistical analysis descriptions to match what was actually shown (no power analysis, logistic not linear regression, no correlation analysis).
 - ⬜ **Blog section** (backlog, not started; Sanjay asked to log it, not start it). First post: using AI to build HTML dashboards as an alternative to Tableau. Cover the HTML approach's limitations (including slowing down as data grows), ease of building in Tableau vs. AI + HTML, and how publishing HTML dashboards compares with large-scale platforms (Power BI, Cognos) on very large datasets.
