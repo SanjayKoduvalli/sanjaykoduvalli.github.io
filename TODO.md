@@ -38,6 +38,7 @@ Last updated: 2026-11-11 (21:50)
 - 🔍 Case study draft built (R23): `index.html` + `notebooks/walkthrough.ipynb`. **Sanjay:** review the page (open `~/projects/upworthy_headlines/index.html`), then push and turn on GitHub Pages for the repo.
 
 ## Done
+- ✅ Olist case-study question reworded (2026-11-14, Olist R37): "Where are the bottlenecks to generating revenue in Olist’s seller funnel?" The old question didn't match the findings; findings unchanged.
 - ✅ Card blurbs rewritten by Sanjay (2026-11-11): both home-page project cards now describe the question each project asks instead of headline numbers. Page meta/og descriptions did not contain the old blurbs, so they are unchanged.
 - ✅ Hero (2026-11-11): Sanjay kept the headline and added the line "Eight years building funnels, models and dashboards that leaders use, at IBM and Macy’s."
 - ✅ Readiness audit fixes (2026-11-11): "Personal Projects" nav on every page; case-study skill chips match the home cards; link-preview (og:) tags on all pages; Upworthy install asides removed and method detail in 3.3–3.6 folded (Upworthy R29, Olist R36). Earlier pushes and GitHub Pages confirmed live by Sanjay.
