@@ -2,7 +2,7 @@
 
 > Start here for any portfolio work. This repo is the home site, and this file is the map of the whole portfolio. Each project has its own `AI_CONTEXT.md` with its rules, detail and status; read that one before working in the project.
 
-Last updated: 2026-11-11
+Last updated: 2026-11-15
 
 ## 1. What the portfolio is
 AI-assisted analyses of public datasets by Sanjay Koduvalli (marketing analytics, IBM; previously Macy's), each a case study with reproducible code, validation at every layer, and a dashboard or code output. One GitHub repo per project, served by GitHub Pages at `https://sanjaykoduvalli.github.io/<repo>/`; this repo is the home page (credentials, project cards, skills × projects matrix, résumé).
@@ -27,7 +27,7 @@ The full rule set is in each project's `AI_CONTEXT.md` (it began in Olist's, §2
 
 ## 5. Home-site files
 - `index.html`: the home page (plain HTML, no build step). `assets/site.css`: shared styles, copied into each project repo (keep the copies in sync). `assets/Sanjay_Koduvalli_Resume.pdf`, `assets/olist-dashboard.png`.
-- Adding a project: build it in its own repo with a case-study `index.html` at the root using `assets/site.css`, turn on Pages, then add a card and a matrix column here. Give the column header an id (like `matrix-olist`), point the card's "See them in the skills matrix" link at it, and add its `:has(#id:target)` highlight rule in `site.css`. Case studies lead with findings paired with recommended actions (Olist R34). No "Project 1/2" labels (Sanjay, 2026-11-11).
+- Adding a project: build it in its own repo with a case-study `index.html` at the root using `assets/site.css`, turn on Pages, then add a card and a matrix column here. Give the column header an id (like `matrix-olist`), point the card's "See them in the skills matrix" link at it, and add its `:has(#id:target)` highlight rule in `site.css`. Case studies lead with findings paired with recommended actions (Olist R34). Section 1's heading is the question itself, kept short (e.g. "1. Does a woman in the headline change clicks?"), not the label "The question" (2026-11-15). The whole card is clickable: put the case-study link on the card's `h3` as `<a class="card-link">`; its stretched `::after` covers the card, and other links in the card stay on top (`site.css`, 2026-11-15). No "Project 1/2" labels (Sanjay, 2026-11-11).
 
 ## 6. Skills matrix rules (2026-11-11)
 A skill gets a filled dot only where the project's case study visibly demonstrates it (link the dot to that section); an outline dot where it was used but isn't the point. Each row's description must match what the linked work actually shows; review the list whenever a project is added.

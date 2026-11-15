@@ -115,7 +115,16 @@ a.dot:hover { background: var(--accent-soft); }
 
 /* project cards */
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
-.project-card { overflow: hidden; display: flex; flex-direction: column; }
+.project-card { overflow: hidden; display: flex; flex-direction: column; position: relative; transition: border-color .15s, box-shadow .15s, transform .15s; }
+/* Whole card opens the case study: the title link stretches over the card; other links sit above it. */
+.project-card .card-link { color: inherit; text-decoration: none; }
+.project-card .card-link::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
+.project-card .card-link:focus-visible { outline: none; }
+.project-card:has(.card-link:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
+.project-card:hover { border-color: var(--accent); box-shadow: 0 12px 32px rgba(75, 58, 168, 0.14); transform: translateY(-2px); }
+.project-card:hover .card-link { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 4px; }
+.project-card .skills-link, .project-card .btns a { position: relative; z-index: 2; }
+@media (prefers-reduced-motion: reduce) { .project-card { transition: none; } .project-card:hover { transform: none; } }
 .project-card .thumb { width: 100%; border-bottom: 1px solid var(--line); background: var(--surface); }
 .project-card .body { padding: 24px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1; }
 .project-card h3 { font-size: 22px; font-weight: 800; }
